@@ -31,6 +31,46 @@ if (bust && heroVisual && canTilt) {
   });
 }
 
+const revealItems = document.querySelectorAll('.reveal');
+if (revealItems.length) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
+
+const progress = document.querySelector('.scroll-progress');
+const motionCards = document.querySelectorAll('.motion-card');
+const canScrollAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+
+const updateScrollProgress = () => {
+  if (!progress) return;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.transform = `scaleX(${scrollable > 0 ? window.scrollY / scrollable : 0})`;
+};
+
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+updateScrollProgress();
+
+if (canScrollAnimate && window.matchMedia('(min-width: 760px)').matches) {
+  motionCards.forEach((card) => {
+    card.addEventListener('pointermove', (event) => {
+      const bounds = card.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      card.style.transform = `perspective(900px) rotateX(${y * -2.8}deg) rotateY(${x * 3.4}deg) translateY(-4px)`;
+    });
+    card.addEventListener('pointerleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+
 const form = document.querySelector('#contact-form');
 const formNote = document.querySelector('#form-note');
 form?.addEventListener('submit', (event) => {
