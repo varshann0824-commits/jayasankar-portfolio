@@ -110,3 +110,12 @@
 .smartfarm-shot-dashboard { top: 13%; right: 0; bottom: auto; left: 0; height: auto; aspect-ratio: 1200 / 582; }
 .smartfarm-shot-dashboard img { object-fit: contain; background: #0b0e0c; }
 @media (max-width: 650px) { .smartfarm-shot-dashboard { top: 12%; right: 0; bottom: auto; left: 0; height: auto; aspect-ratio: 1200 / 582; } }
+
+.resume-milestones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-top: 1px; border: 1px solid var(--line); background: var(--line); }
+.milestone-card { display: grid; grid-template-columns: auto 1fr; gap: 22px; min-height: 145px; padding: 27px 30px; background: rgba(12,17,14,.94); transition: transform .35s ease, background .35s ease; }
+.milestone-card:hover { transform: translateY(-4px); background: rgba(198,255,58,.06); }
+.milestone-year { color: var(--acid); font: 400 11px var(--mono); letter-spacing: .08em; }
+.milestone-card small { color: var(--slate); font: 400 9px var(--mono); letter-spacing: .12em; }
+.milestone-card h3 { margin: 12px 0 9px; font-size: 22px; }
+.milestone-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+@media (max-width: 650px) { .resume-milestones { grid-template-columns: 1fr; } .milestone-card { min-height: 120px; padding: 23px 20px; } }
