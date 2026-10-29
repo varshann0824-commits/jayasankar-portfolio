@@ -106,3 +106,7 @@
 .smartfarm-shot-dashboard img { object-fit: cover; object-position: center center; }
 .smartfarm-shot-home { width: 42%; height: 35%; right: 2%; bottom: 5%; }
 @media (max-width: 650px) { .smartfarm-shot-dashboard { inset: 12% 0 24% 0; } .smartfarm-shot-home { width: 46%; height: 36%; right: 1%; bottom: 4%; } }
+
+.smartfarm-shot-dashboard { top: 13%; right: 0; bottom: auto; left: 0; height: auto; aspect-ratio: 1200 / 582; }
+.smartfarm-shot-dashboard img { object-fit: contain; background: #0b0e0c; }
+@media (max-width: 650px) { .smartfarm-shot-dashboard { top: 12%; right: 0; bottom: auto; left: 0; height: auto; aspect-ratio: 1200 / 582; } }
