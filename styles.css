@@ -85,3 +85,8 @@
 .js-motion .sequence-item:nth-child(4) { transition-delay: .24s; }
 @media (max-width: 900px) { .fit-strip { grid-template-columns: 1fr; gap: 42px; } .project-journey { margin-top: -5px; } }
 @media (max-width: 650px) { .fit-flow { padding-left: 27px; } .fit-step h3 { font-size: 20px; } .project-journey { grid-template-columns: 1fr; gap: 22px; padding-left: 5px; margin-bottom: 30px; } .journey-track { left: 10px; top: 5px; bottom: 5px; width: 1px; height: auto; right: auto; } .journey-step { min-height: 42px; grid-template-columns: 31px 1fr; } .journey-step::before { margin-top: 3px; } .journey-step > span { top: 0; } .journey-step strong { padding-top: 0; } .journey-step small { grid-column: 2; } [data-scroll-shift] { transform: none !important; } }
+
+.smartfarm-real-image { position: absolute; z-index: 1; top: 102px; right: 39px; bottom: 38px; left: 39px; width: calc(100% - 78px); height: calc(100% - 140px); object-fit: cover; object-position: center; border: 1px solid rgba(198,255,58,.36); box-shadow: 23px 25px 40px rgba(0,0,0,.32); filter: saturate(.88) contrast(1.06); transform: perspective(1100px) rotateY(8deg) rotateX(2deg) rotateZ(-1deg); transform-origin: left bottom; transition: transform .6s cubic-bezier(.2,.75,.25,1), filter .4s ease; }
+.project-preview:hover .smartfarm-real-image { transform: perspective(1100px) rotateY(-1deg) rotateX(0deg) rotateZ(0deg) translateY(-7px); filter: saturate(1) contrast(1.06); }
+.smartfarm-real-image::after { content: ''; position: absolute; inset: 0; }
+@media (max-width: 650px) { .smartfarm-real-image { top: 80px; right: 25px; bottom: 25px; left: 25px; width: calc(100% - 50px); height: calc(100% - 105px); transform: perspective(800px) rotateY(4deg) rotateX(1deg); } }
