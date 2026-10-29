@@ -2,6 +2,8 @@
 
 A minimal, dark portfolio for **Yarram Jayasankar Reddy**, a B.Tech student in Artificial Intelligence and Machine Learning at PACE Institute of Technology. The site presents his web-development foundation, SmartFarm contribution, technical skills, resume, and contact details for internship and project-based opportunities.
 
+**Live portfolio:** [jayasankar-it9vdln6.manus.space](https://jayasankar-it9vdln6.manus.space)
+
 ## Featured work
 
 ### SmartFarm — Smart Farming Assistant
