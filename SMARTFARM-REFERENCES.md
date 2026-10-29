@@ -7,6 +7,6 @@
 Portfolio facts kept aligned with the resume:
 
 - Yarram Jayasankar Reddy is a second-year B.Tech student in Artificial Intelligence and Machine Learning at PACE Institute of Technology.
-- Expected graduation: 2029.
+- B.Tech study period: 2025–2029; expected graduation: 2029.
 - Smart India Hackathon internal college selection: 2026.
-- AgriTech & Innovations workshop certificate: year not specified in the resume, so the timeline uses `CERT.` rather than inventing a year.
+- AgriTech & Innovations workshop certificate: 2025.
