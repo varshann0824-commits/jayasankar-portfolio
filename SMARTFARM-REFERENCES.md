@@ -1,12 +1,8 @@
-# SmartFarm portfolio references
 
-- Source repository: https://github.com/varshann0824-commits/smartfarm-ai-app
-- Live demo: https://smartfarm-ai-app.vercel.app
-- Resume source: `/home/ubuntu/upload/resume.pdf`
+## Verified implementation notes
 
-Portfolio facts kept aligned with the resume:
+The public SmartFarm repository manifest and source use React, TypeScript, Vite, Tailwind CSS, Supabase, React Router, Framer Motion, and Three.js-related packages. The source includes weather services with IMD/Open-Meteo handling, a market-price flow that proxies AGMARKNET through a Supabase Edge Function, crop recommendation logic, crop-health and saved-observation flows, and authenticated Supabase-backed farm/task/device data paths.
 
-- Yarram Jayasankar Reddy is a second-year B.Tech student in Artificial Intelligence and Machine Learning at PACE Institute of Technology.
-- B.Tech study period: 2025–2029; expected graduation: 2029.
-- Smart India Hackathon internal college selection: 2026.
-- AgriTech & Innovations workshop certificate: 2025.
+The Talk page implements voice input/output and text fallback, multilingual language handling, and AI query processing through the app's assistant service. Crop-monitoring source code explicitly distinguishes saved observations and weather data from unavailable physical sensor readings; sensor setup and ingestion code are present as development groundwork. The portfolio therefore labels this exposure carefully and does not claim field deployment or autonomous-agent expertise.
+
+Sources: https://github.com/varshann0824-commits/smartfarm-ai-app and https://smartfarm-ai-app.vercel.app/
