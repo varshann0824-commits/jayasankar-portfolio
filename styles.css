@@ -119,3 +119,7 @@
 .milestone-card h3 { margin: 12px 0 9px; font-size: 22px; }
 .milestone-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 @media (max-width: 650px) { .resume-milestones { grid-template-columns: 1fr; } .milestone-card { min-height: 120px; padding: 23px 20px; } }
+
+.milestone-card-wide { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; }
+.milestone-card-wide .text-link { white-space: nowrap; }
+@media (max-width: 650px) { .milestone-card-wide { grid-template-columns: auto 1fr; } .milestone-card-wide .text-link { grid-column: 2; } }

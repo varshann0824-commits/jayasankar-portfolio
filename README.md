@@ -11,7 +11,7 @@ A web-based platform designed to help farmers make better decisions with digital
 - [View the source repository](https://github.com/varshann0824-commits/smartfarm-ai-app)
 - [Open the live demo](https://smartfarm-ai-app.vercel.app)
 
-The portfolio also highlights two resume milestones: participation in the 2026 Smart India Hackathon internal college selection and a 2025 certificate of participation for the AgriTech & Innovations workshop organized by Vurimi AI Global Services.
+The portfolio also includes a current portfolio-build work sample showing the same website development and user-friendly interface focus described in the resume.
 
 ## Skills
 
