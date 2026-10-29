@@ -100,3 +100,9 @@
 .smartfarm-shot-home img { object-position: center center; }
 .project-preview:hover .smartfarm-screens { transform: perspective(1100px) rotateY(-1deg) rotateX(0deg) rotateZ(0deg) translateY(-7px); }
 @media (max-width: 650px) { .smartfarm-screens { inset: 80px 22px 24px 25px; transform: perspective(800px) rotateY(4deg) rotateX(1deg); } .smartfarm-shot-dashboard { inset: 0 9% 0 0; } .smartfarm-shot-home { width: 52%; height: 40%; right: -4%; bottom: 9%; } }
+
+/* Supplied dashboard screenshot is intentionally wide; keep it readable inside the layered preview. */
+.smartfarm-shot-dashboard { inset: 13% 0 23% 0; }
+.smartfarm-shot-dashboard img { object-fit: cover; object-position: center center; }
+.smartfarm-shot-home { width: 42%; height: 35%; right: 2%; bottom: 5%; }
+@media (max-width: 650px) { .smartfarm-shot-dashboard { inset: 12% 0 24% 0; } .smartfarm-shot-home { width: 46%; height: 36%; right: 1%; bottom: 4%; } }
