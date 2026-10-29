@@ -23,6 +23,7 @@
           <a href="#skills">Skills</a>
           <a href="#notes">Notes</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a>
           <a class="nav-resume" href="/resume.pdf" download="Yarram-Jayasankar-Reddy-Resume.pdf">Resume <span>↗</span></a>
         </nav>
       </header>
@@ -69,8 +70,8 @@
         </section>
 
         <section class="fit-strip section-pad reveal" aria-label="Project fit">
-          <div class="fit-intro"><span class="eyebrow">Where I can contribute</span><p>Best fit for focused, project-based work where I can build, explain my decisions, and grow quickly.</p></div>
-          <div class="fit-tags"><span>Web development</span><span>HTML · CSS · JavaScript</span><span>UI implementation</span><span>AI / ML learner</span><span>Clear written reasoning</span><span>Remote-friendly</span></div>
+          <div class="fit-intro"><span class="eyebrow">Where I can contribute</span><p>Best fit for focused, project-based work where I can build, explain my decisions, and grow quickly.</p><div class="fit-tags"><span>Web development</span><span>HTML · CSS · JavaScript</span><span>UI implementation</span><span>AI / ML learner</span><span>Clear written reasoning</span><span>Remote-friendly</span></div></div>
+          <div class="fit-flow" aria-label="How I approach a project"><div class="fit-flow-line"></div><article class="fit-step sequence-item"><span class="fit-step-index">01</span><div><small>BUILD</small><h3>Make it useful.</h3><p>Turn a clear idea into a working interface people can understand.</p></div></article><article class="fit-step sequence-item"><span class="fit-step-index">02</span><div><small>EXPLAIN</small><h3>Show the thinking.</h3><p>Make decisions, constraints, and trade-offs easy to follow.</p></div></article><article class="fit-step sequence-item"><span class="fit-step-index">03</span><div><small>LEARN</small><h3>Improve the next pass.</h3><p>Use feedback and real use to make the work sharper.</p></div></article></div>
         </section>
 
         <section class="work section-pad reveal" id="work" aria-labelledby="work-title">
@@ -78,8 +79,9 @@
             <div><p class="eyebrow">Selected work</p><h2 id="work-title">A small body of<br /><em>useful work.</em></h2></div>
             <p class="section-note">One shipped project, many more ideas in progress. I care about accessible information, clear interfaces, and the details that help people take the next step.</p>
           </div>
+          <div class="project-journey" aria-label="SmartFarm project journey"><div class="journey-track"></div><div class="journey-step sequence-item"><span>01</span><strong>Understand</strong><small>Find the real need.</small></div><div class="journey-step sequence-item"><span>02</span><strong>Build</strong><small>Shape the interface.</small></div><div class="journey-step sequence-item"><span>03</span><strong>Refine</strong><small>Make the next step clear.</small></div></div>
           <article class="project-card motion-card">
-            <div class="project-preview">
+            <div class="project-preview" data-scroll-shift>
               <div class="preview-browser"><span></span><span></span><span></span><b>smartfarm / dashboard</b></div>
               <div class="farm-dashboard">
                 <div class="farm-sidebar"><span class="farm-logo">SF<span>⌁</span></span><i></i><i></i><i></i><i></i></div>
@@ -139,13 +141,13 @@
         </section>
 
         <section class="contact section-pad reveal" id="contact" aria-labelledby="contact-title">
-          <div class="contact-intro"><p class="eyebrow">Open channel</p><h2 id="contact-title">Have a problem<br /><em>worth building?</em></h2><p>For internships, collaborative projects, or a good technical conversation, send a note. I’m always interested in learning by doing.</p><div class="contact-direct"><span>Write directly</span><a href="mailto:varshann0824@gmail.com">varshann0824@gmail.com</a></div></div>
-          <form class="contact-form" id="contact-form">
+          <div class="contact-intro"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s build<br /><em>something useful.</em></h2><p>For project-based web work, internships, collaborative builds, or a good technical conversation, send a note. I’m interested in learning by doing.</p><div class="contact-direct"><span>Email me directly</span><a href="mailto:varshann0824@gmail.com">varshann0824@gmail.com</a></div></div>
+          <form class="contact-form" id="contact-form" action="mailto:varshann0824@gmail.com" method="post" enctype="text/plain">
             <label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" placeholder="Ada Lovelace" required /></label>
             <label for="email">Your email<input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required /></label>
             <label for="message">A little context<textarea id="message" name="message" rows="4" placeholder="Tell me what you're working on…" required></textarea></label>
-            <button class="button button-primary" type="submit">Send the note <span>↗</span></button>
-            <p class="form-note" id="form-note" role="status">This opens your email app with the message ready to send.</p>
+            <button class="button button-primary" type="submit">Open email draft <span>↗</span></button>
+            <p class="form-note" id="form-note" role="status">Your email app will open with the message ready to send.</p>
           </form>
         </section>
       </main>

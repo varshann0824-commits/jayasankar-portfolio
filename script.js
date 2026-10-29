@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js-motion');
+
 const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('.site-nav');
 
@@ -44,14 +46,36 @@ if (revealItems.length) {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
 
+const sequenceItems = document.querySelectorAll('.sequence-item');
+if (sequenceItems.length) {
+  const sequenceObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.28, rootMargin: '0px 0px -10% 0px' });
+  sequenceItems.forEach((item) => sequenceObserver.observe(item));
+}
+
 const progress = document.querySelector('.scroll-progress');
 const motionCards = document.querySelectorAll('.motion-card');
+const scrollShiftItems = document.querySelectorAll('[data-scroll-shift]');
 const canScrollAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
 const updateScrollProgress = () => {
   if (!progress) return;
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   progress.style.transform = `scaleX(${scrollable > 0 ? window.scrollY / scrollable : 0})`;
+  if (canScrollAnimate) {
+    scrollShiftItems.forEach((item) => {
+      const bounds = item.getBoundingClientRect();
+      const distance = (window.innerHeight / 2 - (bounds.top + bounds.height / 2)) / window.innerHeight;
+      const shift = Math.max(-14, Math.min(14, distance * 18));
+      item.style.setProperty('--scroll-shift', `${shift.toFixed(2)}px`);
+    });
+  }
 };
 
 window.addEventListener('scroll', updateScrollProgress, { passive: true });
